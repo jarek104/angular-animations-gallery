@@ -1,0 +1,6 @@
+<h2 style="padding: 10px"> 15 stages of programming</h2>
+<mat-nav-list [@listStagger]="items.length">
+  <mat-list-item *ngFor="let item of items; let i = index">
+    <a matLine class="row-text">{{i + 1}}. {{ item | titlecase}}</a>
+  </mat-list-item>
+</mat-nav-list>

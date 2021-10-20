@@ -1,0 +1,7 @@
+<div class="nav">
+  <button mat-button routerLink="/route-fade-in-out/route-a">Route A</button>
+  <button mat-button routerLink="/route-fade-in-out/route-b">Route B</button>
+</div>
+<div fxFlex class="container" [@fadeAnimation]="getRouterOutletState(o)">
+  <router-outlet #o="outlet"></router-outlet>
+</div>

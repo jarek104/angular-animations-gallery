@@ -1,0 +1,8 @@
+<h1 class="header">Proper Animal Names</h1>
+<div fxFlex fxLayout="row" fxLayoutAlign="space-evenly start">
+  <div *ngFor="let item of ['Freedom Glider', 'Prison Pony', 'Danger Noodle']; let i = index" class="item" [@hoverState]="state===i"  (mouseenter)="expand(i)" (mouseleave)="collapse(i)">
+    <div [@textHoverTrigger]="state===i" style="position: absolute; padding: 10px; color: white; opacity: 0">{{item}}</div>
+    <div [ngClass]="getClass(i)"></div>
+  </div>
+</div>
+<h3 style="height: 100px">This demo uses 'animateChild()' for the text inside the picture</h3>

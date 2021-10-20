@@ -1,0 +1,35 @@
+.parent {
+  width: 100%;
+  height: 100px;
+  background: lightgoldenrodyellow;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.child1 {
+  width: 100%;
+  height: 100%;
+  background: lightcoral;
+}
+
+.child2 {
+  width: 100%;
+  height: 100%;
+  background: lightgreen;
+}
+
+.child3 {
+  width: 100%;
+  height: 100%;
+  background: lightblue;
+}
+.child4 {
+  width: 100%;
+  height: 100%;
+  background: lightgrey;
+}

@@ -1,0 +1,12 @@
+
+<div class="parent" [@slideDownTransition]="state">
+  <div *ngIf="state === 'coral'" class="child1 child">coral</div>
+  <div *ngIf="state === 'green'" class="child2 child">green</div>
+  <div *ngIf="state === 'blue'" class="child3 child">blue</div>
+  <div *ngIf="state === 'grey'" class="child4 child">grey</div>
+</div>
+<br>
+<button mat-raised-button (click)="state = 'coral'">coral</button>
+<button mat-raised-button (click)="state = 'green'">green</button>
+<button mat-raised-button (click)="state = 'blue'">blue</button>
+<button mat-raised-button (click)="state = 'grey'">grey</button>

@@ -1,0 +1,16 @@
+:host {
+  a {
+    padding: 5px 10px;
+  }
+}
+
+.nav {
+  z-index: 2;
+  position: absolute;
+  color: white;
+}
+// /deep/ router-outlet ~ * {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+// }

@@ -1,0 +1,7 @@
+<div class="nav">
+  <button mat-button routerLink="/route-slide-from-sides/route-sb" (click)="previous()">Previous</button>
+  <button mat-button routerLink="/route-slide-from-sides/route-sa" (click)="next()">Next</button>
+</div>
+<div [@animRoutes]="routerAnimation.outletAnimationState | async">
+ <router-outlet #u="outlet"></router-outlet>
+</div>

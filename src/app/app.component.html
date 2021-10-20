@@ -1,0 +1,16 @@
+
+<mat-drawer-container class="drawer-container">
+  <mat-drawer mode="side" opened class="drawer">
+    <h3 mat-subheader>Routes</h3>
+    <mat-divider></mat-divider>
+    <mat-nav-list>
+      <mat-list-item [routerLink]="item.path" *ngFor="let item of navigationItems">
+        <p matLine class="component-toolbar-label">{{ item.path }}</p>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-drawer>
+  <mat-drawer-content style="overflow-x: hidden;">
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
+
